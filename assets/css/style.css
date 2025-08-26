@@ -133,6 +133,25 @@ textarea {
   font: inherit;
 }
 
+.card-banner1{
+  height: 100px;
+  width: 100px;
+}
+
+.card-banner2{
+  height: 100px;
+  width: 100px;
+}
+
+.card-banner3{
+  height: 100%;
+  width: 100%;
+}
+
+.card-content-cita{
+  width: 400%;
+}
+
 input,
 select,
 textarea { width: 100%; }
