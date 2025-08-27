@@ -667,40 +667,38 @@
         </div>
       </section>
 
-
-
-
-
       <!-- 
         - #APPOINTMENT
       -->
 
-      <section class="agendar-cita">
+      <!-- Formulario -->
+<section class="agendar-cita">
+<div class="form-container">
   <h2>Agendar Cita</h2>
-  <p>"Tu próxima experiencia de estilo está a un clic de distancia. 
-     ¡Reserva tu cita y déjanos cuidar de ti y tu cabello!".</p>
+  <input type="text" id="nombre" placeholder="Tu nombre completo">
+  <input type="text" id="celular" placeholder="Número de celular">
+  
+  <select id="categoria">
+    <option value="">Seleccionar Categoría</option>
+    <option value="Corte de Cabello">Corte de Cabello</option>
+    <option value="Tintura">Tintura</option>
+    <option value="Peinado">Peinado</option>
+  </select>
+  
+  <input type="date" id="fecha">
+  <input type="time" id="hora">
+  
+  <button class="btn-reservar" onclick="agendarCita()">Reservar</button>
+</div>
 
-  <form>
-    <input type="text" placeholder="Tu nombre completo">
-    <input type="tel" placeholder="Numero de celular">
-    <select class="full-row">
-      <option>Seleccionar Categoria</option>
-      <option>Corte de Cabello</option>
-      <option>Color de Cabello</option>
-      <option>Barba</option>
-      <option>Servicio VIP</option>
-    </select>
-    <input type="date" class="full-row">
-    <button type="submit">Reservar</button>
-  </form>
+<!-- Sección donde se mostrarán las citas -->
+<h3>Citas Agendadas</h3>
+<ul id="listaCitas"></ul>
+
+  
 </section>
-
-
     </article>
   </main>
-
-
-
 
 
   <!-- 
@@ -726,7 +724,7 @@
           <ul class="footer-list">
 
             <li>
-              <p class="footer-list-title">Quick Links</p>
+              <p class="footer-list-title1">Quick Links</p>
             </li>
 
             <li>
