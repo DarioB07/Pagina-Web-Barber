@@ -675,69 +675,26 @@
         - #APPOINTMENT
       -->
 
-      <section class="section appoin" id="appointment" aria-label="appointment">
-        <div class="container">
+      <section class="agendar-cita">
+  <h2>Agendar Cita</h2>
+  <p>"Tu próxima experiencia de estilo está a un clic de distancia. 
+     ¡Reserva tu cita y déjanos cuidar de ti y tu cabello!".</p>
 
-          <div class="appoin-card">
+  <form>
+    <input type="text" placeholder="Tu nombre completo">
+    <input type="tel" placeholder="Numero de celular">
+    <select class="full-row">
+      <option>Seleccionar Categoria</option>
+      <option>Corte de Cabello</option>
+      <option>Color de Cabello</option>
+      <option>Barba</option>
+      <option>Servicio VIP</option>
+    </select>
+    <input type="date" class="full-row">
+    <button type="submit">Reservar</button>
+  </form>
+</section>
 
-            <figure class="card-banner img-holder" style="--width: 1000; --height: 774;">
-              <img src="./assets/images/recono.jpg" width="1000" height="774" loading="lazy" alt=""
-                class="img-cover">
-            </figure>
-
-            <div class="card-content-cita">
-
-              <h2 class="h2 section-title">Agendar Cita</h2>
-
-              <p class="section-text">
-                "Tu próxima experiencia de estilo está a un clic de distancia. ¡Reserva tu cita y déjanos cuidar de ti y tu cabello!". 
-              </p>
-
-              <form action="" class="appoin-form">
-
-                <div class="input-wrapper">
-                  <input type="text" name="name" placeholder="Your Full Name" required class="input-field">
-
-                  <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
-                </div>
-
-                <div class="input-wrapper">
-                  <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
-
-                  <select name="category" class="input-field">
-
-                    <option value="Select category">Select category</option>
-                    <option value="Beauty & spa">Beauty & spa</option>
-                    <option value="Body massage">Body massage</option>
-                    <option value="Shaving & Facial">Shaving & Facial</option>
-                    <option value="Hair Color">Hair Color</option>
-
-                  </select>
-                </div>
-
-                <input type="date" name="date" required class="input-field date">
-
-                <textarea name="message" placeholder="Write Message" required class="input-field"></textarea>
-
-                <button type="submit" class="form-btn">
-                  <span class="span">Appointment Now</span>
-
-                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-                </button>
-
-              </form>
-
-            </div>
-
-            <figure class="card-banner img-holder" style="--width: 450; --height: 974;">
-              <img src="./assets/images/recono.jpg" width="450" height="974" loading="lazy" alt=""
-                class="img-cover">
-            </figure>
-
-          </div>
-
-        </div>
-      </section>
 
     </article>
   </main>
